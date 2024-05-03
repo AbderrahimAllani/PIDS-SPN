@@ -36,3 +36,11 @@ def estimate_fine(vitesse_autorisee, vitesse_mesuree):
             return "Potential criminal offense"
     
     return "No fine information available for this range"
+
+def estimate_parking_fine(violation_type):
+    if violation_type in ["unlawful parking", "exceeding the time limit", "parking without a disc"]:
+        return 40
+    elif violation_type == "parking outside of a designated zone":
+        return 60
+    else:
+        return "No fine information available for this violation"
