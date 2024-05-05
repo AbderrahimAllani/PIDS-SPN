@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['paper-document-']
+
+roboflow:
+  workspace: thev
+  project: document-detection-aoemj
+  version: 1
+  license: Private
+  url: https://app.roboflow.com/thev/document-detection-aoemj/1
